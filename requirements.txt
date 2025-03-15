@@ -1,0 +1,8 @@
+django-allauth==65.5.0
+django-allauth-ui==1.6.1
+django-browser-reload==1.18.0
+django-compressor==4.5.1
+django-debug-toolbar==5.0.1
+django-extensions==3.2.3
+livereload==2.7.1
+python-dotenv==1.0.1
