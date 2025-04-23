@@ -1,0 +1,55 @@
+name: "Developer Issue"
+description: Issue with description, learning objectives, todo, and useful links
+title: "[DEV] - "
+labels: ["development 👨‍💻"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to create a development issue!
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the development task or issue
+      placeholder: A clear and concise description of what needs to be done
+    validations:
+      required: true
+
+  - type: textarea
+    id: learning-objectives
+    attributes:
+      label: Learning Objectives
+      description: List the learning objectives for this development task
+      placeholder: |
+        - Objective 1
+        - Objective 2
+        - Objective 3
+    validations:
+      required: true
+
+  - type: textarea
+    id: todo
+    attributes:
+      label: Todo Items
+      description: List the tasks that need to be completed
+      placeholder: |
+        These points are a rough guideline. Please feel free to discuss with others on the team about the best way to design this component!
+
+        - [ ] Task 1
+        - [ ] Task 2
+        - [ ] Task 3
+    validations:
+      required: true
+
+  - type: textarea
+    id: useful-links
+    attributes:
+      label: Useful Links
+      description: Add any useful links or references
+      placeholder: |
+        - Link 1: description
+        - Link 2: description
+    validations:
+      required: false
