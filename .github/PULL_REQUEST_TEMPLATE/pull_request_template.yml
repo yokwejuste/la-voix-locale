@@ -1,0 +1,72 @@
+name: "Pull Request"
+description: "Submit a pull request to contribute to La Voix Locale"
+title: "[PR] - "
+labels: ["pull-request 🔄"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for creating this pull request! Please fill in the information below.
+
+  - type: input
+    id: related-issue
+    attributes:
+      label: Related Issue
+      description: Please provide the issue number this PR addresses
+      placeholder: "e.g., #123"
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Briefly describe what this pull request does
+      placeholder: A clear and concise description of the changes
+    validations:
+      required: true
+
+  - type: textarea
+    id: changes
+    attributes:
+      label: Changes Made
+      description: List the main changes implemented in this PR
+      placeholder: |
+        - Change 1
+        - Change 2
+        - Change 3
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: For frontend changes, please add screenshots of the changes
+      placeholder: Drag and drop screenshots here
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      description: Please check all that apply
+      options:
+        - label: I have tested these changes locally
+          required: true
+        - label: My code follows the project's coding standards
+          required: true
+        - label: I have updated the documentation accordingly
+          required: false
+        - label: I have added tests to cover my changes
+          required: false
+
+  - type: textarea
+    id: additional-notes
+    attributes:
+      label: Additional Notes
+      description: Add any other context about the pull request here
+      placeholder: Any additional information that might be helpful
+    validations:
+      required: false
